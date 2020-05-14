@@ -23,13 +23,14 @@ Things you may want to cover:
 
 ### Association
  - has_many: messages
- - has_manay: groups, through: users_groups
+ - has_many: users_groups
+ - has_many: groups, through: users_groups
 
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
-|img|string|null: false|
+|img|string||
 |user_id|integer|foreign_key: true, null: false|
 |group_id|integer|foreign_key: true, null: false|
 
@@ -44,6 +45,7 @@ Things you may want to cover:
 
 ### Association
  - has_many: messages
+ - has_many: users_groups
  - has_many: users, through: users_groups
 
 ## users_groupsテーブル
