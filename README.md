@@ -29,7 +29,7 @@ Things you may want to cover:
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|body|text||
 |img|string||
 |user_id|integer|foreign_key: true, null: false|
 |group_id|integer|foreign_key: true, null: false|
