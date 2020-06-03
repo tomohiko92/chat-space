@@ -4,5 +4,33 @@
 
 .side_bar{
   width:300px;
-  background-color: #253141;
+  background-color: #2f3e51;
+  height:100vh;
+  &__username{
+    background-color:#253141 ;
+    height:100px;
+  }
+}
+
+.main_chat{
+  width:100vw;
+  background-color:#fafafa;
+  height:100vh;
+  position: relative;
+  &__group_info{
+    height:100px;
+    background-color: white;
+  }
+  &__message_list{
+    height:calc(100vh - 190px);
+  }
+  &__message_form{
+    height:90px;
+    background-color:#d2d2d2;
+
+    }
+}
+
+.wrapper{
+  display: flex;
 }
