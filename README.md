@@ -17,7 +17,7 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|nickname|string|null: false, index: true, unique: true|
+|name|string|null: false, index: true, unique: true|
 |email|string|null: false, index: true, unique: true|
 |password|string|null: false|
 
@@ -48,11 +48,12 @@ Things you may want to cover:
  - has_many: users_groups
  - has_many: users, through: users_groups
 
-## users_groupsテーブル
+## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+
 
 ### Association
  - belongs_to:user

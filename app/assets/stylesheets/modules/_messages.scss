@@ -27,13 +27,9 @@
     display: flex;
     align-items: center;
   }
-  &__grouplist{
-    background-color:#2f3e51;
-    height: calc(100vh - 100px);
-    padding-right: 20px;
-    padding-left: 20px;
-  }
 }
+
+
 
 .top-items{
   background-color:#253141 ;
@@ -51,20 +47,31 @@
     .icon-b{
       color:white;
     }
-
   }
 }
 
-.groups{
+.GroupList{
+  background-color:#2f3e51;
+  height: calc(100vh - 100px);
+  padding-right: 20px;
+  padding-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.Group{
   color: white;
   padding-top: 20px;
   padding-bottom: 40px;
-  &__groupname{
+  text-decoration: none;
+  &__name{
     font-size: 15px;
     margin-bottom: 5px;
+    text-decoration: none;
   }
-  &__groupmention{
+  &__message{
     font-size: 11px;
+    text-decoration: none;
   }
 }
 
@@ -85,12 +92,14 @@
     height:calc(100vh - 190px);
     padding-left: 40px;
   }
-  &__message_form{
+}
+
+.Footer{
     height:90px;
     background-color:#d2d2d2;
     padding:20px 40px 20px 50px;
     }
-}
+
 
 .group_data{
   padding-top: 35px;
@@ -147,30 +156,32 @@
   }
 }
 
-.new_message{
+.Form{
   height: 50px;
   @include center(space-between);
-  .input-items{
+  &__contents{
     width: 100%;
     position: relative;
     @include center(space-between);
-    &__text{
+  }
+  &__inputContent{
       height:50px;
       width: 100%;
       color: #434A54;
       border-style: none;
       padding: 0 0px 0 10px;
     }
-    &__image{
+  &__inputImage{
       position: absolute;
       right: 10px;
       font-size: 1.3rem;
-      &__file{
-        display: none;
-      }
-    }
   }
-  .submit-btn{
+  
+  &__Hidden{
+    display: none;
+      }
+  
+  &__submit{
     width: 100px;
     height: 50px;
     padding: 0 30px;
