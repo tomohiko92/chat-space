@@ -91,6 +91,7 @@
   &__message_list{
     height:calc(100vh - 190px);
     padding-left: 40px;
+    overflow: scroll;
   }
 }
 
